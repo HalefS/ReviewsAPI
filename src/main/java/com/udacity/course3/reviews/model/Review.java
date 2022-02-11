@@ -4,35 +4,34 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.Collection;
-import java.util.List;
 
 @Entity(name = "reviews")
 public class Review {
 
     @Id
     private long id;
-    @OneToOne(targetEntity = User.class)
-    private User author;
     @NotNull
     private String title;
     @NotNull
-    @Size(min = 0, max = 5)
+    @Size(min = 1, max = 5)
     private int stars;
     @NotNull
     private String text;
     @OneToMany(mappedBy = "review", cascade = CascadeType.ALL)
     private Collection<Comment> comments;
+    @ManyToOne(targetEntity = Product.class)
+    private Product product;
 
     public Review() {
         // EMPTY
     }
 
-    public Review(User author, String title, int stars, String text, Collection<Comment> comments) {
-        this.author = author;
+    public Review(String title, int stars, String text, Collection<Comment> comments, Product product) {
         this.title = title;
         this.stars = stars;
         this.text = text;
         this.comments = comments;
+        this.product = product;
     }
 
     public long getId() {
@@ -43,13 +42,6 @@ public class Review {
         this.id = id;
     }
 
-    public User getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(User author) {
-        this.author = author;
-    }
 
     public String getTitle() {
         return title;
@@ -81,5 +73,13 @@ public class Review {
 
     public void setComments(Collection<Comment> comments) {
         this.comments = comments;
+    }
+
+    public Product getProduct() {
+        return product;
+    }
+
+    public void setProduct(Product product) {
+        this.product = product;
     }
 }

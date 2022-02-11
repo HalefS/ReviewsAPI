@@ -10,8 +10,6 @@ public class Comment {
 
     @Id
     private long id;
-    @ManyToOne(targetEntity = User.class)
-    private User author;
     @ManyToOne(targetEntity = Review.class)
     private Review review;
 
@@ -19,8 +17,7 @@ public class Comment {
         // EMPTY
     }
 
-    public Comment(User author, Review review) {
-        this.author = author;
+    public Comment(Review review) {
         this.review = review;
     }
 
@@ -32,13 +29,6 @@ public class Comment {
         this.id = id;
     }
 
-    public User getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(User author) {
-        this.author = author;
-    }
 
     public Review getReview() {
         return review;
