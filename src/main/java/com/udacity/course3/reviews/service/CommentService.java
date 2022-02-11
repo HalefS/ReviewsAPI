@@ -8,7 +8,7 @@ import java.util.Optional;
 @Service
 public interface CommentService {
 
-    Optional<Comment> findById(long id);
+    Comment findById(long id);
 
     void save(Comment comment);
 }

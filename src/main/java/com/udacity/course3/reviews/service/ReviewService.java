@@ -8,7 +8,7 @@ import java.util.Optional;
 @Service
 public interface ReviewService {
 
-    Optional<Review> findById(long id);
+    Review retrieveById(long id);
 
     void save(Review review);
 }
