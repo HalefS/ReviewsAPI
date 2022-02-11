@@ -10,7 +10,7 @@ public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     private Review review;
     @NotNull
     @Column(name = "stock_count")

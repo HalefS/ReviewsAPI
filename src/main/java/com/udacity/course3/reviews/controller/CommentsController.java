@@ -1,11 +1,14 @@
 package com.udacity.course3.reviews.controller;
 
 import com.udacity.course3.reviews.model.Comment;
+import com.udacity.course3.reviews.model.Review;
+import com.udacity.course3.reviews.service.CommentService;
+import com.udacity.course3.reviews.service.ReviewService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.HttpServerErrorException;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -16,6 +19,8 @@ import java.util.List;
 public class CommentsController {
 
     // TODO: Wire needed JPA repositories here
+    private ReviewService reviewService;
+    private CommentService commentService;
 
     /**
      * Creates a comment for a review.
@@ -29,7 +34,10 @@ public class CommentsController {
      */
     @RequestMapping(value = "/reviews/{reviewId}", method = RequestMethod.POST)
     public ResponseEntity<?> createCommentForReview(@PathVariable("reviewId") Integer reviewId, @RequestBody Comment comment) {
-        throw new HttpServerErrorException(HttpStatus.NOT_IMPLEMENTED);
+        Review review = reviewService.retrieveById(reviewId);
+        comment.setReview(review);
+        commentService.save(comment);
+        return new ResponseEntity<>(comment, HttpStatus.CREATED);
     }
 
     /**
@@ -43,6 +51,7 @@ public class CommentsController {
      */
     @RequestMapping(value = "/reviews/{reviewId}", method = RequestMethod.GET)
     public List<?> listCommentsForReview(@PathVariable("reviewId") Integer reviewId) {
-        throw new HttpServerErrorException(HttpStatus.NOT_IMPLEMENTED);
+        Review review = reviewService.retrieveById(reviewId);
+        return new ArrayList<>(review.getComments());
     }
 }

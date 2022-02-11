@@ -21,7 +21,7 @@ public class Review {
     private String text;
     @OneToMany(mappedBy = "review", cascade = CascadeType.ALL)
     private Collection<Comment> comments;
-    @ManyToOne(targetEntity = Product.class)
+    @ManyToOne(targetEntity = Product.class, cascade = CascadeType.ALL)
     private Product product;
 
     public Review() {

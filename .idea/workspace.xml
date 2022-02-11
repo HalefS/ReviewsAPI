@@ -5,14 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="303aa520-873b-4b60-b787-ab6ef470cd9a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/migration.db/V001_CreateTables.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/create.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/ReviewsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/ReviewsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/controller/CommentsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/controller/CommentsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/controller/ProductsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/controller/ProductsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/controller/ReviewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/controller/ReviewsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/model/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/model/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/model/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/model/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/model/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/repository/ReviewRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/repository/ReviewRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/service/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/service/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/service/ReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/service/ReviewService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/service/ReviewServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/service/ReviewServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/migration.db/V001_CreateTables.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/ReviewsApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/ReviewsApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/model/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/model/Comment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/model/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/model/Review.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/model/Review.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/migration.db/V001_CreateTables.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +49,7 @@
     <setting file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/service/ProductService.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/service/ProductNotFoundException.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/repository/ProductRepository.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/resources/migration.db/V001_CreateTables.sql" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/db/migration/V01__CreateTables.sql" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/service/CommentService.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/model/Product.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/ReviewsApplication.java" root0="FORCE_HIGHLIGHTING" />
@@ -86,6 +101,11 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/db/migration" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="ReviewsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="reviews" />
@@ -103,7 +123,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1644544134366</updated>
-      <workItem from="1644544136346" duration="12437000" />
+      <workItem from="1644544136346" duration="20506000" />
     </task>
     <servers />
   </component>

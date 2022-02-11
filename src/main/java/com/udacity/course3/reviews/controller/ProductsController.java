@@ -1,5 +1,7 @@
 package com.udacity.course3.reviews.controller;
 
+import com.udacity.course3.reviews.model.Product;
+import com.udacity.course3.reviews.service.ProductService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,18 +16,23 @@ import java.util.List;
 @RequestMapping("/products")
 public class ProductsController {
 
-    // TODO: Wire JPA repositories here
+    private ProductService productService;
 
     /**
      * Creates a product.
      *
-     * 1. Accept product as argument. Use {@link RequestBody} annotation.
-     * 2. Save product.
      */
     @RequestMapping(value = "/", method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.CREATED)
-    public void createProduct() {
-        throw new HttpServerErrorException(HttpStatus.NOT_IMPLEMENTED);
+    public void createProduct(@RequestBody Product product) {
+        // if request body is valid, persist body
+        // if not respond with bad request
+        if (product != null) {
+            productService.save(product);
+        }
+        else {
+            throw new HttpServerErrorException(HttpStatus.BAD_REQUEST);
+        }
     }
 
     /**
@@ -36,7 +43,8 @@ public class ProductsController {
      */
     @RequestMapping(value = "/{id}")
     public ResponseEntity<?> findById(@PathVariable("id") Integer id) {
-        throw new HttpServerErrorException(HttpStatus.NOT_IMPLEMENTED);
+        Product product = productService.retrieveById(id);
+        return new ResponseEntity<>(product, HttpStatus.OK);
     }
 
     /**
@@ -46,6 +54,6 @@ public class ProductsController {
      */
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public List<?> listProducts() {
-        throw new HttpServerErrorException(HttpStatus.NOT_IMPLEMENTED);
+        return productService.retrieveAll();
     }
 }

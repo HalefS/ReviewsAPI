@@ -16,7 +16,7 @@ create table reviews (
 );
 
 create table comments (
-    id int auto_incrment,
+    id int auto_increment,
     content varchar(500) not null,
     review_id int,
     constraint comments_pk primary key (id),
