@@ -1,24 +1,28 @@
 package com.udacity.course3.reviews.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
-@Entity(name = "comments")
+@Entity
+@Table(name = "comments")
 public class Comment {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @ManyToOne(targetEntity = Review.class)
+    @ManyToOne
     private Review review;
+    @NotNull
+    @Column(name = "stock_count")
+    private String content;
 
     public Comment() {
         // EMPTY
     }
 
-    public Comment(Review review) {
+    public Comment(Review review, String content) {
         this.review = review;
+        this.content = content;
     }
 
     public long getId() {
@@ -36,5 +40,13 @@ public class Comment {
 
     public void setReview(Review review) {
         this.review = review;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
     }
 }

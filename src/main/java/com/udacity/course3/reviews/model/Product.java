@@ -1,33 +1,29 @@
 package com.udacity.course3.reviews.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.Collection;
 
-@Entity(name = "products")
+@Entity
+@Table(name = "products")
 public class Product {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @OneToMany(mappedBy = "product")
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
     Collection<Review> reviews;
     @Column(unique = true, nullable = false)
     private String name;
     @NotNull
     private String description;
+    @NotNull
+    private int stockCount;
 
     public Product() {
         // EMPTY
     }
 
-    public Product(Collection<Review> reviews, String name, String description) {
-        this.reviews = reviews;
-        this.name = name;
-        this.description = description;
-    }
 
     public long getId() {
         return id;
@@ -59,5 +55,13 @@ public class Product {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public int getStockCount() {
+        return stockCount;
+    }
+
+    public void setStockCount(int stockCount) {
+        this.stockCount = stockCount;
     }
 }
