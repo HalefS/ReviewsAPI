@@ -1,5 +1,7 @@
 package com.udacity.course3.reviews.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
@@ -9,20 +11,24 @@ public class Comment {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @JsonIgnore
     private long id;
     @ManyToOne(cascade = CascadeType.ALL)
+    @JsonIgnore
     private Review review;
     @NotNull
-    @Column(name = "stock_count")
     private String content;
+    @NotNull
+    private String author;
 
     public Comment() {
         // EMPTY
     }
 
-    public Comment(Review review, String content) {
+    public Comment(Review review, String content, String author) {
         this.review = review;
         this.content = content;
+        this.author = author;
     }
 
     public long getId() {
@@ -48,5 +54,13 @@ public class Comment {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
     }
 }

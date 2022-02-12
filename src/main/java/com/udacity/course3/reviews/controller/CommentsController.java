@@ -4,6 +4,7 @@ import com.udacity.course3.reviews.model.Comment;
 import com.udacity.course3.reviews.model.Review;
 import com.udacity.course3.reviews.service.CommentService;
 import com.udacity.course3.reviews.service.ReviewService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,21 +19,22 @@ import java.util.List;
 @RequestMapping("/comments")
 public class CommentsController {
 
-    // TODO: Wire needed JPA repositories here
+    @Autowired
     private ReviewService reviewService;
+    @Autowired
     private CommentService commentService;
+
+    public CommentsController(ReviewService reviewService, CommentService commentService) {
+        this.reviewService = reviewService;
+        this.commentService = commentService;
+    }
 
     /**
      * Creates a comment for a review.
      *
-     * 1. Add argument for comment entity. Use {@link RequestBody} annotation.
-     * 2. Check for existence of review.
-     * 3. If review not found, return NOT_FOUND.
-     * 4. If found, save comment.
-     *
      * @param reviewId The id of the review.
      */
-    @RequestMapping(value = "/reviews/{reviewId}", method = RequestMethod.POST)
+    @PostMapping(value = "/reviews/{reviewId}")
     public ResponseEntity<?> createCommentForReview(@PathVariable("reviewId") Integer reviewId, @RequestBody Comment comment) {
         Review review = reviewService.retrieveById(reviewId);
         comment.setReview(review);
@@ -43,13 +45,9 @@ public class CommentsController {
     /**
      * List comments for a review.
      *
-     * 2. Check for existence of review.
-     * 3. If review not found, return NOT_FOUND.
-     * 4. If found, return list of comments.
-     *
      * @param reviewId The id of the review.
      */
-    @RequestMapping(value = "/reviews/{reviewId}", method = RequestMethod.GET)
+    @GetMapping(value = "/reviews/{reviewId}")
     public List<?> listCommentsForReview(@PathVariable("reviewId") Integer reviewId) {
         Review review = reviewService.retrieveById(reviewId);
         return new ArrayList<>(review.getComments());

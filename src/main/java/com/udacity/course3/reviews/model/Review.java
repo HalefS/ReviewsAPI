@@ -1,6 +1,10 @@
 package com.udacity.course3.reviews.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.Collection;
@@ -11,29 +15,35 @@ public class Review {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @JsonIgnore
     private long id;
     @NotNull
     private String title;
     @NotNull
-    @Size(min = 1, max = 5)
+    @Min(value = 1, message = "Review should have at least 1 star")
+    @Max(value = 5, message = "Review should have at most 5 stars")
     private int stars;
     @NotNull
     private String text;
-    @OneToMany(mappedBy = "review", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "review")
     private Collection<Comment> comments;
-    @ManyToOne(targetEntity = Product.class, cascade = CascadeType.ALL)
+    @ManyToOne(targetEntity = Product.class)
+    @JsonIgnore
     private Product product;
+    @NotNull
+    private String author;
 
     public Review() {
         // EMPTY
     }
 
-    public Review(String title, int stars, String text, Collection<Comment> comments, Product product) {
+    public Review(String title, int stars, String text, Collection<Comment> comments, Product product, String author) {
         this.title = title;
         this.stars = stars;
         this.text = text;
         this.comments = comments;
         this.product = product;
+        this.author = author;
     }
 
     public long getId() {
@@ -83,5 +93,13 @@ public class Review {
 
     public void setProduct(Product product) {
         this.product = product;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
     }
 }

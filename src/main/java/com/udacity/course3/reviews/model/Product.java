@@ -1,5 +1,7 @@
 package com.udacity.course3.reviews.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.Collection;
@@ -10,14 +12,16 @@ public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @JsonIgnore
     private long id;
-    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, targetEntity = Review.class)
     Collection<Review> reviews;
     @Column(unique = true, nullable = false)
     private String name;
     @NotNull
     private String description;
     @NotNull
+    @Column(name = "stock_count")
     private int stockCount;
 
     public Product() {
