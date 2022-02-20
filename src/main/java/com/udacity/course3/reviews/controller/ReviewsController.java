@@ -1,14 +1,13 @@
 package com.udacity.course3.reviews.controller;
 
-import com.udacity.course3.reviews.model.Product;
-import com.udacity.course3.reviews.model.Review;
+import com.udacity.course3.reviews.domain.Product;
+import com.udacity.course3.reviews.domain.Review;
 import com.udacity.course3.reviews.service.ProductService;
 import com.udacity.course3.reviews.service.ReviewService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.HttpServerErrorException;
 
 import java.util.List;
 

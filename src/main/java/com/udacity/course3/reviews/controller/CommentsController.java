@@ -1,7 +1,7 @@
 package com.udacity.course3.reviews.controller;
 
-import com.udacity.course3.reviews.model.Comment;
-import com.udacity.course3.reviews.model.Review;
+import com.udacity.course3.reviews.domain.Comment;
+import com.udacity.course3.reviews.domain.Review;
 import com.udacity.course3.reviews.service.CommentService;
 import com.udacity.course3.reviews.service.ReviewService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,6 @@
 package com.udacity.course3.reviews.service;
 
-import com.udacity.course3.reviews.model.Product;
+import com.udacity.course3.reviews.domain.Product;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

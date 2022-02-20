@@ -1,4 +1,4 @@
-package com.udacity.course3.reviews.model;
+package com.udacity.course3.reviews.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -6,6 +6,7 @@ import javax.persistence.*;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
+import java.sql.Timestamp;
 import java.util.Collection;
 
 @Entity
@@ -29,19 +30,20 @@ public class Review {
     @ManyToOne(targetEntity = Product.class)
     @JsonIgnore
     private Product product;
-    @NotNull
+   @Column(columnDefinition = "varchar(255) default 'Anonymous'")
     private String author;
+    @Column(name = "created_at", columnDefinition = "timestamp default 'current_timestamp'")
+    private Timestamp createdAt;
 
     public Review() {
         // EMPTY
     }
 
-    public Review(String title, int stars, String text, Collection<Comment> comments, Product product, String author) {
+    public Review(String title, int stars, String text, Collection<Comment> comments, String author) {
         this.title = title;
         this.stars = stars;
         this.text = text;
         this.comments = comments;
-        this.product = product;
         this.author = author;
     }
 
@@ -100,5 +102,13 @@ public class Review {
 
     public void setAuthor(String author) {
         this.author = author;
+    }
+
+    public Timestamp getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(Timestamp createdAt) {
+        this.createdAt = createdAt;
     }
 }

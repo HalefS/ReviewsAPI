@@ -1,10 +1,9 @@
 package com.udacity.course3.reviews.service;
 
-import com.udacity.course3.reviews.model.Review;
+import com.udacity.course3.reviews.domain.Review;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public interface ReviewService {

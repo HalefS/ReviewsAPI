@@ -1,4 +1,4 @@
-package com.udacity.course3.reviews.model;
+package com.udacity.course3.reviews.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -28,6 +28,12 @@ public class Product {
         // EMPTY
     }
 
+    public Product(Collection<Review> reviews, String name, String description, int stockCount) {
+        this.reviews = reviews;
+        this.name = name;
+        this.description = description;
+        this.stockCount = stockCount;
+    }
 
     public long getId() {
         return id;

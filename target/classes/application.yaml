@@ -10,7 +10,7 @@ spring:
       # Don't let JPA/Hibernate create the schema
     generate-ddl: false
     hibernate:
-      ddl-auto: none
+      ddl-auto: create
   flyway:
     url: jdbc:mysql://localhost:3306/reviews_api
     user: course3

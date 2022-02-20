@@ -5,12 +5,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="303aa520-873b-4b60-b787-ab6ef470cd9a" name="Changes" comment="changes">
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V05__Add_Not_Null_Constraint_To_Created_At_Columns.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V4.5__Add_CreatedAt_Column.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/75cd867d-3442-499e-92cc-e5ba4701eb09.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/75cd867d-3442-499e-92cc-e5ba4701eb09.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/model/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/model/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/model/Review.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/model/Review.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/controller/CommentsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/controller/CommentsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/controller/ProductsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/controller/ProductsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/controller/ReviewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/controller/ReviewsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/model/Comment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/model/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/model/Review.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/repository/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/repository/CommentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/repository/ReviewRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/repository/ReviewRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/service/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/service/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/service/CommentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/service/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/service/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/service/ReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/service/ReviewService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/service/ReviewServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/service/ReviewServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/udacity/course3/reviews/ReviewsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/udacity/course3/reviews/ReviewsApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/ReviewsApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/ReviewsApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/controller/CommentsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/controller/CommentsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/controller/ProductsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/controller/ProductsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/controller/ReviewsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/controller/ReviewsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/model/Comment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/model/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/model/Review.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/repository/CommentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/repository/CommentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/repository/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/repository/ProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/repository/ReviewRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/repository/ReviewRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/service/CommentNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/service/CommentNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/service/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/service/CommentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/service/CommentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/service/CommentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/service/ProductNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/service/ProductNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/service/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/service/ProductServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/service/ProductServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/service/ReviewNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/service/ReviewNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/service/ReviewService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/service/ReviewService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/service/ReviewServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/udacity/course3/reviews/service/ReviewServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/udacity/course3/reviews/ReviewsApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/udacity/course3/reviews/ReviewsApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,12 +81,13 @@
     <setting file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/repository/ProductRepository.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/resources/db/migration/V01__CreateTables.sql" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/service/CommentService.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/model/Product.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/domain/Product.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/ReviewsApplication.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/service/ReviewServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/service/ProductServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/model/Review.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/model/Comment.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/db/migration/V4.5__Add_CreatedAt_Column.sql" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/domain/Review.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/domain/Comment.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/controller/CommentsController.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/controller/ReviewsController.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews/controller/ProductsController.java" root0="FORCE_HIGHLIGHTING" />
@@ -75,26 +114,50 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DatabaseDriversLRU" value="mysql&#10;h2" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/" value="MySQL" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/udacity/course3/reviews" />
+      <recent name="$PROJECT_DIR$/src/test/java/com/udacity/course3/reviews" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/resources/db/migration" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ReviewsApplicationTests">
+    <configuration name="ReviewsApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reviews" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.udacity.course3.reviews.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.udacity.course3.reviews" />
+      <option name="MAIN_CLASS_NAME" value="com.udacity.course3.reviews.ReviewsApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="reviews-0.0.1-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/reviews-0.0.1-SNAPSHOT.jar" />
+      <method v="2" />
+    </configuration>
     <configuration name="ReviewsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="reviews" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.udacity.course3.reviews.ReviewsApplication" />
@@ -102,6 +165,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ReviewsApplicationTests" />
+        <item itemvalue="JAR Application.reviews-0.0.1-SNAPSHOT.jar" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -111,7 +180,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1644544134366</updated>
-      <workItem from="1644544136346" duration="32235000" />
+      <workItem from="1644544136346" duration="37920000" />
+      <workItem from="1644801212958" duration="2096000" />
+      <workItem from="1644980049021" duration="5995000" />
+      <workItem from="1645204009786" duration="7936000" />
     </task>
     <servers />
   </component>

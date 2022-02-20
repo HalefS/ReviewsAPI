@@ -1,6 +1,6 @@
 package com.udacity.course3.reviews.repository;
 
-import com.udacity.course3.reviews.model.Review;
+import com.udacity.course3.reviews.domain.Review;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
